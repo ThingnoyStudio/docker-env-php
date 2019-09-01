@@ -7,6 +7,8 @@ LABEL MAINTAINER="skypart@test.mail"
 # environment variable
 ENV ENVIRONMENT=prod
 
+RUN echo ${ENVIRONMENT}
+
 # run command
 # execute on build image
 RUN echo "[PHP] \ndate.timezone = Asia/Bangkok" >> /usr/local/etc/php/php.ini
